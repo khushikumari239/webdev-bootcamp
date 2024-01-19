@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction & Creating A Basic Grid</title>
+</head>
+<style>
+    .container{
+        display: grid;
+        /* grid means A pattern of straight line that cross each other to form squares
+        grid is a layout making machanism */
+        /* grid-template-columns: 300px auto 100px ; */
+        grid-template-columns: 4fr 1fr 2fr ;
+        /* grid-gap: 30px; */
+        grid-template-columns: repeat(4, auto);
+        grid-gap: 2rem;
+    }
+    .item{
+        /* height: 75px; */
+        /* width: 75px; */
+        background-color:  greenyellow ;
+         border: 2px solid black;
+        padding: 6px ;
+       
+    }
+    
+
+</style>
+<body>
+   
+    <div class="container">
+        <div class="item">this is item-1</div>
+        <div class="item">this is item-2</div>
+        <div class="item">this is item-3</div>
+        <div class="item">this is item-4</div>
+        <div class="item">this is item-5</div>
+        <div class="item">this is item-6</div>
+    </div>
+    
+</body>
+</html>
